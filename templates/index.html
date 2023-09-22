@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Room Booking</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2>Room Booking</h2>
+        </div>
+        <div class="navbar-menu">
+            <form action="/logout">
+            <button class="logout-button">Logout</button>
+            </form>
+        </div>
+    </nav>
+    <div class="form-text">
+        <h1><span><img src="../static/img/art-1.png" alt=""></span>Book Now <span><img id="img2" src="../static/img/art-1.png" alt=""></span></h1>
+        <p>Stay once, carry memories forever. </p>
+    </div>
+
+    <div class="main-form">
+        <form id="booking-form" action="/dashboard" method="GET" onsubmit="redirectToPayment(event)">
+            <div>
+                <select id="city" name="city" onchange="changeOptionColor(this)">
+                    <option value="">Select City</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kanyakumari">Kanyakumari</option>
+                </select>
+            </div>
+            <div>
+                <select id="hotel" name="hotel" disabled>
+                    <option value="" selected>Select Hotel</option>
+                </select>
+            </div>
+            <input type="hidden" id="hotel-price" name="hotel-price">
+            <div>
+                <select name="people" id="people" required>
+                    <option value="">Person</option>
+                    <option value="1">1 Adult Or 1 Adult, 1 Child</option>
+                    <option value="2">2 Adult Or 2 Adult, 1 Child</option>
+                    <option value="3">3 Adult Or 3 Adult, 1 Child</option>
+                    <option value="4">4 Adult Or 4 Adult, 1 Child</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+            </div>
+            <div>
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" name="check-out-date" required>
+            </div>
+            <div>
+                <input type="number" name="number" id="number" placeholder="Mobile Number" required>
+            </div>
+            <div id="submit">
+                <input type="submit" style="padding: 10px;" value="SUBMIT" id="submit">
+            </div>
+        </form>
+    </div>
+    
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

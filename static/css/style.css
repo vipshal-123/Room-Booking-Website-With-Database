@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+}
+    .navbar {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar-brand h2 {
+        color: #000;
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 24px;
+    }
+
+    .navbar-brand span img {
+        margin-right: 20%;
+    }
+
+
+    .logout-button {
+        background-color: #ffca00;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Akaya Telivigala', cursive;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .logout-button:hover {
+        background-color: #000;
+    }
+
+.form-text {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.form-text h1 span img {
+    margin: 0 18px;
+}
+
+#img2{
+    margin: 0;
+}
+
+.form-text h1 {
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-text p {
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div {
+    margin: 10px 20px;
+    width: 30%;
+    display: inline-block;
+}
+
+.main-form div input {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div select {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+.main-form div span {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #fff;
+    font-size: 25px;
+}
+
+#submit {
+    position:relative;
+    left: 25.5%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#submit input {
+    font-family: 'Akaya Telivigala', cursive;
+    width: 100px;
+    background-color: #ffca00;
+    color: #fff;
+    transition: all .3s;
+}
+
+#submit1 {
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    width: 97%;
+}
+
+#submit1 input {
+    font-family: 'Akaya Telivigala', cursive;
+    width: 150px;
+    background-color: #ffca00;
+    color: #fff;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+
+
+label{
+    color: #fff;
+}
+
+#submit input:hover {
+    width: 200px;
+    background-color: #fff;
+    color: #ffca00;
+}
+
+#submit input:active {
+    width: 150px;
+    background-color: rgb(46, 20, 5);
+    color: #fff;
+}
+
+#submit1 input:hover {
+    width: 200px;
+    background-color: #fff;
+    color: #ffca00;
+}
+
+#submit1 input:active {
+    width: 150px;
+    background-color: rgb(46, 20, 5);
+    color: #fff;
+}
+
+/* Add a custom CSS class to the select element */
+select {
+    position: relative;
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+
+/* Style the options */
+select option {
+    background-color: #000;
+    color: #fff;
+}
+
+#succcess{
+    margin-top: 20%;
+    color: white;
+    text-align: center;
+}
+
+#succ{
+    margin-top: 20px;
+}
+
+
